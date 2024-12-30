@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenyatta University Voting System</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Kenyatta University - School of Pure and Applied Sciences</h1>
+    <p>Online Voting System</p>
+  </header>
+
+  <!-- Login Page -->
+  <section id="login-page" class="page active">
+    <h2>Login</h2>
+    <form id="login-form">
+      <label for="reg-number">Enter Your Registration Number:</label>
+      <input type="text" id="reg-number" placeholder="Registration Number" required>
+      <button type="submit">Login</button>
+      <p id="login-error" class="error-message"></p>
+    </form>
+  </section>
+
+  <!-- Election Page -->
+  <section id="election-page" class="page">
+    <h2>Select an Election</h2>
+    <ul id="election-list"></ul>
+  </section>
+
+  <!-- Voting Page -->
+  <section id="voting-page" class="page">
+    <h2>Vote for Your Candidate</h2>
+    <form id="vote-form">
+      <ul id="candidate-list"></ul>
+      <button type="submit">Submit Vote</button>
+    </form>
+  </section>
+
+  <!-- Thank You Page -->
+  <section id="thank-you-page" class="page">
+    <h2>Thank You!</h2>
+    <p>Your vote has been successfully recorded.</p>
+    <p>Your reference number is: <span id="reference-number"></span></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Kenyatta University - School of Pure and Applied Sciences</p>
+  </footer>
+</body>
+</html>
